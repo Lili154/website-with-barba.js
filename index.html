@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel-Nobi</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-barba="wrapper">
+  <!-- <div class="background-image" style="background-image: url('images/sea.jpg');"></div> -->
+
+  <header>
+    <nav>
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="images/logo1.jpg" alt="Hotel-Nobi Logo" class="logo" style="border-radius: 50px;">
+        <h1 class="nav-title">ГОСТЕВОЙ ДОМ</h1>
+         </a>
+      </div>
+
+      <!-- Burger Icon -->
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="desktopMenu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about_us.html">О Нас</a></li>
+        <li><a href="rooms.html">Номера</a></li>
+        <li><a href="gallery.html">Фотогалерея</a></li>
+        <li><a href="fun.html">Развлечения</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <button class="book_button"><a href="rooms.html" id="book_button">Забронировать</a></button>
+      </ul>
+    </nav>
+  </header>
+  <div data-barba="container" data-barba-namespace="index">
+
+
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Each slide with text inside -->
+      <div class="mySlides fade">
+        <img src="images/fon-more-plyazh-47.jpg" style="width:100%">
+        <div class="slider-text">Отдых с NOBI - это больше, чем любовь</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/transfer3.jpg" style="width:100%">
+        <div class="slider-text">Незабываемый комфорт и уют</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/sea.jpg" style="width:100%">
+        <div class="slider-text">Ваш идеальный отдых начинается здесь</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <form name="search_form" novalidate="" class="" style="display: flex;">
+      <ul class="elements" role="presentation">
+        <li class="check-in" role="presentation">
+          <label id="check-in-label" for="check-in" stranslate="widget.CHECK_IN"><span
+              class="strans">Заезд</span></label>
+          <button wix-date-picker="" tabindex="0" type="button" ng-model="filters.checkIn" id="check-in"
+            after="1746511329979" mark="markCheckin"
+            trigger-on="[['open-checkin', 'click'], ['focus:check_in', 'focus']]" trigger-bubble="" name="check_in"
+            class="s-field s-separator ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
+            aria-labelledby="check-in-label" aria-describedby="check-in-value" aria-expanded="false">
+            <wix-svg icon="calendar" class="icon"><svg viewBox="0 0 200 200">
+                <use
+                  xlink:href="https://hotels.wixapps.net/search-widget.html?pageId=c1v3p&amp;compId=id703k8q&amp;viewerCompId=id703k8q&amp;siteRevision=50&amp;viewMode=site&amp;deviceType=desktop&amp;locale=ru&amp;tz=America%2FNew_York&amp;regionalLanguage=ru&amp;width=980&amp;height=81&amp;instance=z3kO9ee-2ilxh9m2tBDtdYeMDAEZkksmsPPCZY4t2JE.eyJpbnN0YW5jZUlkIjoiNzJlNjc3NWUtOGZjOS00YjRhLWExNmEtN2ZhNjE0ZmE5YzVkIiwiYXBwRGVmSWQiOiIxMzVhYWQ4Ni05MTI1LTYwNzQtNzM0Ni0yOWRjNmEzYzliY2YiLCJtZXRhU2l0ZUlkIjoiZjRlNGU4NzctNTcxYS00YjMxLWFmNDctM2I5NjQ1OTk3ZTAyIiwic2lnbkRhdGUiOiIyMDI1LTA1LTA2VDEwOjAyOjA4LjcwMloiLCJkZW1vTW9kZSI6dHJ1ZSwib3JpZ2luSW5zdGFuY2VJZCI6ImQzMmMwODQwLTNlMTMtNDQ4My04YjllLTQ3ZTExYzhiZjZjNSIsImFpZCI6Ijk5OTAxYTVkLTQ1ZjEtNDRmNC1hOGE4LTExODQ5M2ZlNTFiOSIsImJpVG9rZW4iOiI4NjAyOWYyOS1kOGQzLTAwN2ItMGUyZC00NDMwNTE2M2UyNWYiLCJzaXRlT3duZXJJZCI6IjY4YzU2ZjM5LWZlNjctNGYzZC04YWU3LTk5MTY4NDQ2M2E2MyIsInNpdGVJc1RlbXBsYXRlIjp0cnVlLCJzY2QiOiIyMDE1LTExLTEwVDA5OjI4OjA5LjU4M1oifQ&amp;commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%227e6571bf-52c4-4a55-8041-4883429f74a7%7C1%22%2C%22siteRevision%22%3A%2250%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22ru%22%2C%22locale%22%3A%22%22%2C%22BSI%22%3A%227e6571bf-52c4-4a55-8041-4883429f74a7%7C1%22%7D&amp;currentRoute=.%2F&amp;consent-policy=%7B%22func%22%3A1%2C%22anl%22%3A1%2C%22adv%22%3A0%2C%22dt3%22%3A0%2C%22ess%22%3A1%7D&amp;vsi=3a1182c0-6b87-4677-a4e9-082d028826d3#calendar">
+                </use>
+              </svg></wix-svg>
+            <span id="check-in-value" class="ng-binding"></span>
+            <span translate="DD MM YYYY" ng-show="!filters.checkIn" class="ng-scope">DD MM YYYY</span>
+          </button>
+        </li>
+        <li class="check-out" role="presentation">
+          <label id="check-out-label" for="check-out" stranslate="widget.CHECK_OUT"><span
+              class="strans">Выезд</span></label>
+          <button wix-date-picker="" tabindex="0" type="button" ng-model="filters.checkOut" id="check-out"
+            mark="markCheckout" after="1746576000000"
+            trigger-on="[['check-in-selected', 'click'], ['focus:check_out', 'focus']]" trigger-bubble=""
+            name="check_out" class="s-field s-separator ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
+            aria-labelledby="check-out-label" aria-describedby="check-out-value" aria-expanded="false">
+            <wix-svg icon="calendar" class="icon"><svg viewBox="0 0 200 200">
+                <use
+                  xlink:href="https://hotels.wixapps.net/search-widget.html?pageId=c1v3p&amp;compId=id703k8q&amp;viewerCompId=id703k8q&amp;siteRevision=50&amp;viewMode=site&amp;deviceType=desktop&amp;locale=ru&amp;tz=America%2FNew_York&amp;regionalLanguage=ru&amp;width=980&amp;height=81&amp;instance=z3kO9ee-2ilxh9m2tBDtdYeMDAEZkksmsPPCZY4t2JE.eyJpbnN0YW5jZUlkIjoiNzJlNjc3NWUtOGZjOS00YjRhLWExNmEtN2ZhNjE0ZmE5YzVkIiwiYXBwRGVmSWQiOiIxMzVhYWQ4Ni05MTI1LTYwNzQtNzM0Ni0yOWRjNmEzYzliY2YiLCJtZXRhU2l0ZUlkIjoiZjRlNGU4NzctNTcxYS00YjMxLWFmNDctM2I5NjQ1OTk3ZTAyIiwic2lnbkRhdGUiOiIyMDI1LTA1LTA2VDEwOjAyOjA4LjcwMloiLCJkZW1vTW9kZSI6dHJ1ZSwib3JpZ2luSW5zdGFuY2VJZCI6ImQzMmMwODQwLTNlMTMtNDQ4My04YjllLTQ3ZTExYzhiZjZjNSIsImFpZCI6Ijk5OTAxYTVkLTQ1ZjEtNDRmNC1hOGE4LTExODQ5M2ZlNTFiOSIsImJpVG9rZW4iOiI4NjAyOWYyOS1kOGQzLTAwN2ItMGUyZC00NDMwNTE2M2UyNWYiLCJzaXRlT3duZXJJZCI6IjY4YzU2ZjM5LWZlNjctNGYzZC04YWU3LTk5MTY4NDQ2M2E2MyIsInNpdGVJc1RlbXBsYXRlIjp0cnVlLCJzY2QiOiIyMDE1LTExLTEwVDA5OjI4OjA5LjU4M1oifQ&amp;commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%227e6571bf-52c4-4a55-8041-4883429f74a7%7C1%22%2C%22siteRevision%22%3A%2250%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22ru%22%2C%22locale%22%3A%22%22%2C%22BSI%22%3A%227e6571bf-52c4-4a55-8041-4883429f74a7%7C1%22%7D&amp;currentRoute=.%2F&amp;consent-policy=%7B%22func%22%3A1%2C%22anl%22%3A1%2C%22adv%22%3A0%2C%22dt3%22%3A0%2C%22ess%22%3A1%7D&amp;vsi=3a1182c0-6b87-4677-a4e9-082d028826d3#calendar">
+                </use>
+              </svg></wix-svg>
+            <span id="check-out-value" class="ng-binding"></span>
+            <span translate="DD MM YYYY" ng-show="!filters.checkOut" class="ng-scope">DD MM YYYY</span>
+          </button>
+        </li>
+        <li class="adults" role="presentation">
+          <label id="adults-label" for="adults" stranslate="widget.ADULTS"><span class="strans">Взрослых</span></label>
+          <div class="s-separator s-field spinner ng-isolate-scope ng-not-empty ng-valid" aria-valuenow="1"
+            aria-valuetext="1" wix-spinner="" id="adults" tabindex="0" min="1" ng-model="filters.adults"
+            aria-labelledby="adults-label" role="slider" aria-valuemin="1">
+            <span ng-show="isNumber()" class="value ng-binding">1</span>
+            <span ng-hide="isNumber()" class="placeholder ng-binding ng-hide"></span>
+            <span class="label ng-binding" ng-bind="label"></span>
+            <a role="button" tabindex="-1" href="#" ng-disabled="isMax()" ng-click="up($event)" class="up"
+              aria-label="Увеличить"></a>
+            <a role="button" tabindex="-1" href="#" ng-disabled="isMin()" ng-click="down($event)" class="down"
+              aria-label="Уменьшить" disabled="disabled"></a>
+          </div>
+        </li>
+        <li class="children" role="presentation">
+          <label id="children-label" for="children" stranslate="widget.KIDS"><span class="strans">Детей</span></label>
+          <div class="s-separator s-field spinner ng-isolate-scope ng-not-empty ng-valid" aria-valuenow="0"
+            aria-valuetext="0" wix-spinner="" id="children" tabindex="0" min="0" ng-model="filters.children"
+            aria-labelledby="children-label" role="slider" aria-valuemin="0">
+            <span ng-show="isNumber()" class="value ng-binding">0</span>
+            <span ng-hide="isNumber()" class="placeholder ng-binding ng-hide"></span>
+            <span class="label ng-binding" ng-bind="label"></span>
+            <a role="button" tabindex="-1" href="#" ng-disabled="isMax()" ng-click="up($event)" class="up"
+              aria-label="Увеличить"></a>
+            <a role="button" tabindex="-1" href="#" ng-disabled="isMin()" ng-click="down($event)" class="down"
+              aria-label="Уменьшить" disabled="disabled"></a>
+          </div>
+        </li>
+        <li class="search" role="presentation">
+          <label>&nbsp;</label>
+          <button ng-click="filter($root.endpoint)" wix-bi="SEARCH" wix-bi-args="getBookingParams()" type="submit"
+            tabindex="0" class="s-button">
+            <span stranslate="widget.SEARCH"><span class="strans">Подобрать номер</span></span>
+          </button>
+        </li>
+      </ul>
+    </form>
+
+    <div class="container_text">
+      <div class="title" id="home">
+
+        <h3>Добро пожаловать</h3>
+        <h2 style="margin-top: -30px;">___</h2>
+        <p>Отдых с NOBI - это больше, чем любовь.Незабываемый комфорт и уют</p>
+      </div>
+      <div></div>
+      <div class="row">
+        <div class="zoom_block">
+          <h4>Развлечения</h4>
+          <p>Отдых с NOBI - это больше, чем любовь
+          <p>
+          <h2 style="color: #4D89C9;">___</h2>
+          <button class="more_button"><a href="fun.html">Узнать подробнее</a></button>
+          </p>
+        </div>
+        <div class="zoom_block">
+          <h4>Номера и цены</h4>
+          <p>Незабываемый комфорт и уют</p>
+          <h2 style="color: #4D89C9;">___</h2>
+          <button class="more_button"><a href="rooms.html">Узнать подробнее</a></button>
+          </p>
+        </div>
+        <div class="zoom_block">
+          <h4>Расположение</h4>
+          <p>В пешей доступности от пляжа и центра города</p>
+          <h2 style="color: #4D89C9;">___</h2>
+          <button class="more_button"><a href="about_us.html">Узнать подробнее</a></button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="services">
+    <div class="title">
+      <h1 class="rooms">УСЛУГИ</h1>
+      <h2 style="color: #e014f0; margin-top: -30px;">___</h2>
+    </div>
+    <div class="services_block">
+      <div class="services_blocks">
+        <img src="images/3903456.png" alt="Image 1">
+        <h2>Трансфер</h2>
+      </div>
+      <div class="services_blocks">
+        <img src="images/14480.png" alt="Image 1">
+        <h2>Барбекю</h2>
+      </div>
+      <div class="services_blocks">
+        <img src="images/90481.png" alt="Image 1">
+        <h2>Экскурсии</h2>
+      </div>
+      <div class="services_blocks">
+        <img src="images/hookah_2101705.png" alt="Image 1">
+        <h2>Кальян</h2>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="map"
+      style="background-color: #fff; margin-top: 16px; width: 100%; margin-left: auto; margin-right: auto;">
+      <div class="body-content" style="word-wrap: break-word; text-align: center;">
+        <p class="lead" style="font-size: 18px; margin-top: -15px;"></p>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUBBCTfPD" width="100%" height="400px" frameborder="1"
+          allowfullscreen="true" style="display: block; margin: 0 auto;">
+        </iframe>
+      </div>
+    </div>
+
+
+    
+  </div>
+  <footer>
+    <div class="footer_container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-start" style="font-size: 25px;"> <b>Контакты</b></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-start"> +7 (940) 910 30 10</div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-start"> Ardzinba Avenue 273, Гагра, Абхазия</div>
+      </div>
+      <br>
+      <div class="row align-items-end">
+        <div class="col-lg-4 text-lg-start"> 2025 Copyright | Nobi Hotel</div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/whatsapp-button.js"></script>
+  <script src="scripts/burger.js"></script>
+
+</body>
+
+</html>

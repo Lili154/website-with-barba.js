@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Nobi Hotel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/about_us.css">
+</head>
+
+
+<body data-barba="wrapper">
+    <div class="background-image"></div>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo1.jpg" alt="Hotel-Nobi Logo" class="logo" style="border-radius: 50px;">
+                    <h1 class="nav-title">ГОСТЕВОЙ ДОМ</h1>
+                </a>
+            </div>
+
+            <!-- Burger Icon -->
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="desktopMenu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#about">О Нас</a></li>
+                <li><a href="rooms.html">Номера</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="fun.html">Развлечения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div data-barba="container" data-barba-namespace="contacts">
+
+
+        <div class="contact-wrapper">
+            <div style="background-color: #fff;
+           /* left: 0; */
+           position: relative;
+           /* right: 0; */
+           width: 100%;
+           height: 100vh;
+           margin-top: 480px;">
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contacts_title" >
+                    <h1 class="rooms" style="color: #4D89C9;
+                                                padding-top:50px;
+                                        padding-right:26px;">КОНТАКТЫ</h1>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <div>
+                            <address>
+                                <p style="font-size: 18px; font-weight: bold; color:  #4D89C9">Адрес гостевого дома:</p>
+                                Ardzinba Avenue 273,<br /> Абхазия, Гагра<br />
+                                <abbr title="Phone">Телефон:</abbr>
+                                +7 (940) 910 30 10
+                            </address>
+                        </div>
+
+                    </div>
+                    <div class="form_container">
+                        <div class=" form">
+                            <p style="font-size: 18px; font-weight: bold; color:  #4D89C9">Отправить сообщение</p>
+                            <form action="send.php" method="post">
+                                <input name="name" type="text" class="text-field__input" placeholder="Ваше ФИО"
+                                    required />
+                                <input name="email" type="email" class="text-field__input" placeholder="Email"
+                                    required />
+                                <input name="phone" type="tel" class="text-field__input"
+                                    placeholder="Телефонный номер" />
+                                <textarea name="message" placeholder="Сообщение" rows="5" class="text-field__textarea"
+                                    required></textarea>
+                                <input type="submit" value="Отправить" class="btn btn-primary btn-lg" />
+                            </form>
+
+                        </div>
+                    </div>
+                    <span style="font-size:30px;">
+
+                    </span>
+                </div>
+                <div style=>
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUBBCTfPD" width="100%" height="300px"
+                        frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <p style="color: green;">
+            <?php if (isset($_GET['success'])) echo 'Thank you, your message has been sent.'; ?>
+        </p>
+        <p style="color: red;">
+            <?php if (isset($_GET['error'])) echo 'Error: ' . htmlspecialchars($_GET['error']); ?>
+        </p>
+
+
+    </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start" style="font-size: 25px;"> <b>Контакты</b></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start"> +7 (940) 910 30 10</div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start"> Ardzinba Avenue 273, Гагра, Абхазия</div>
+            </div>
+            <br>
+            <div class="row align-items-end">
+                <div class="col-lg-4 text-lg-start"> 2025 Copyright | Nobi Hotel</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Load reCAPTCHA JS -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/whatsapp-button.js"></script>
+
+
+</body>
+
+</html>
