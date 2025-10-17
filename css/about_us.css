@@ -1,0 +1,51 @@
+
+.about_us_content {
+  width: 100%;
+  max-width: 800px;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  max-height: 70vh; /* adjust as needed */
+  overflow-y: auto;
+}
+
+
+.about_us_blocks {
+  background-color: rgba(255, 255, 255, 0.95); /* Optional transparency */
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about_us_text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+body {
+  margin: 0;
+  background-image: url('/images/sea.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Ensures it stays fixed during scroll */
+  font-family: sans-serif;
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px; /* or your desired spacing */
+
+}
+.about_us_content::-webkit-scrollbar {
+  width: 8px;
+}
+.about_us_content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
